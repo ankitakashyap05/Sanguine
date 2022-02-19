@@ -1,0 +1,183 @@
+    body {
+        animation-name: backgd;
+        animation-duration: 5s;
+        background: #bff0b8;
+    }
+    
+    .myDiv {
+        text-align: center;
+        opacity: 90%;
+        margin: 15% 0 2% 0;
+        font-size: 20px;
+        animation-name: texttravel;
+        animation-duration: 5s;
+    }
+    
+    @keyframes backgd {
+        from {
+            background: #E3F9E8
+        }
+        to {
+            background: #bff0b8;
+        }
+    }
+    
+    #loader {
+        /* Uncomment this to make it run! */
+        animation: loader 5s linear infinite;
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 20px);
+    }
+    
+    @keyframes loader {
+        0% {
+            left: -100px
+        }
+        100% {
+            left: 110%;
+        }
+    }
+    
+    #box {
+        width: 50px;
+        height: 50px;
+        background: rgb(234, 246, 252);
+        animation: animate .5s linear infinite;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+    }
+    
+    @keyframes animate {
+        17% {
+            border-bottom-right-radius: 3px;
+        }
+        25% {
+            transform: translateY(9px) rotate(22.5deg);
+        }
+        50% {
+            transform: translateY(18px) scale(1, .9) rotate(45deg);
+            border-bottom-right-radius: 40px;
+        }
+        75% {
+            transform: translateY(9px) rotate(67.5deg);
+        }
+        100% {
+            transform: translateY(0) rotate(90deg);
+        }
+    }
+    
+    #shadow {
+        width: 50px;
+        height: 5px;
+        background: #000;
+        opacity: 0.1;
+        position: absolute;
+        top: 59px;
+        left: 0;
+        border-radius: 50%;
+        animation: shadow .5s linear infinite;
+    }
+    
+    @keyframes shadow {
+        50% {
+            transform: scale(1.2, 1);
+        }
+    }
+    
+    .txt {
+        position: absolute;
+        display: inline-block;
+        font-family: "bebasnue", sans-serif;
+        font-size: 35px;
+        text-align: center;
+        user-select: none;
+        margin: auto;
+        width: 100vw;
+        height: 100pt;
+        top: 0;
+        bottom: 0;
+        filter: url(#threshold) blur(0.6px);
+        animation-name: txttravel;
+        animation-duration: 5s;
+    }
+    
+    @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1 {
+        font-family: "Montserrat Medium";
+        max-width: 40ch;
+        transform: scale(0.94);
+        animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+        margin-top: 490px;
+        font-size: 30px;
+    }
+    
+    @keyframes scale {
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    span {
+        display: inline-block;
+        opacity: 0;
+        filter: blur(4px);
+    }
+    
+    span:nth-child(1) {
+        animation: fade-in 2s 0.05s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    }
+    
+    span:nth-child(2) {
+        animation: fade-in 2.5s 0.10s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    }
+    
+    span:nth-child(3) {
+        animation: fade-in 3s 0.15s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    }
+    
+    span:nth-child(4) {
+        animation: fade-in 4s 0.17s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    }
+    
+    span:nth-child(5) {
+        animation: fade-in 4s 0.17s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    }
+    
+    @keyframes fade-in {
+        100% {
+            opacity: 1;
+            filter: blur(0);
+        }
+    }
+    
+    h2 {
+        font-family: "bebasnue";
+        max-width: 40ch;
+        transform: scale(0.94);
+        animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+        position: absolute;
+        top: 90%;
+        right: 3%;
+        font-size: 19px;
+    }
+    
+    #displayq {
+        font-family: "Typewriter";
+        max-width: 240ch;
+        transform: scale(0.94);
+        animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+        position: relative;
+        top: 10%;
+        font-size: 16px;
+    }
