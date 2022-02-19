@@ -20,25 +20,50 @@ sometimes leads to suicides. To solve this, our <b>Team Sasa</b> has come up wit
 
 What we aim is to help the victim at every step of his/her/their journey if they are Cyberbullied.
 
->Correct Information about 
-Cyberbullying
 
-Sanguine provides quizzes and sources for correct info to let know everyone about the correct notion about cyberbullying.
+---
+
+## ⚙️ Installation and Set-Up
 <br>
 
->Protecting the victim
+> 🌐 For Website
 
-A google chrome extension which hides all the abusive words from victim's interface is provided
+Execute the following sequence of code to run the website locally :
+- To create new environment
+    ```sh
+    python -m venv . 
+    ```
+ - To activate venv
+    ```sh
+   .\Scripts\Activate.ps1 
+    ``` 
+ - To install neccesities
+      ```sh
+   pip install django 
+    ```     
+- Run the migrations using the following commands
+    ```sh
+    python manage.py makemigrations
+    ```
+    ```sh
+    python manage.py migrate
+    ```
 
->Taking action against the bully
+- Run the Django server by
+    ```sh
+    python manage.py runserver
+    ```
 
-A report form is built with necessary details to aid the victim in their journey to get justice. 
+<br>
 
->Recovering from the bullying incident
+>  🧩For Chrome Extension
 
-We provide features at every stage:intrinsic and extrinsic. A to-do list, mood lifter recommendations and a bot to chat with.
+Follow these steps to unpack the extension in your chrome browser :
 
-
+- After cloning the repository, go to Chrome Browser and search for `chrome://extensions` .
+- Ensure that the Developer mode is on.
+- Click on `Load unpacked` and select `web-ext` folder from the repository.
+- Your chrome browser is equipped with our extension now!.
 
 > 🎨Figma Design(Still in progress)
 
