@@ -1,0 +1,8 @@
+{% autoescape off %}
+Hi {{name}}!
+
+    Greetings from Team SASA, we are so grateful to have u here with us.
+
+{% comment %} Before I can send you any emails, I need you to confirm your subscription so I’m sure all I send goes straight to you! It’s nothing complicated, just click the button below!
+Confirmation Link : https://{{domain}}{% url 'activate' uidb64=uid token=token %} {% endcomment %}
+{% endautoescape %}

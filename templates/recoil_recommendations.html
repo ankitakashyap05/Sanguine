@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block links %}
+{% load static %}
+<link
+  rel="shortcut icon"
+  href="{% static 'images/icon.png' %}"
+  type="image/x-icon"
+/>
+<link rel="stylesheet" href="{% static 'assets/recoil.css' %}">
+    <script src="https://cdn.tailwindcss.com"></script>
+{% endblock links %}
+{% block title %}Moodle{% endblock title %}
+{% block body %}
+<center>
+    <div class="flex flex-row flex-wrap justify-center mt-16 ">
+        <a href="" class="green-col font-bold box-shadow px-8 m-4 mb-4 py-2 mt-8 rounded-xl text-2xl lg:w-1/4 w-2/3  font-semibold tracking-wide"
+           style="box-shadow: 10px 10px #d6e4e5; ">Bot</a>
+           <a href="" class="green-col font-bold box-shadow m-4 px-8 mb-4 py-2 mt-8 rounded-xl text-2xl lg:w-1/4 w-2/3  font-semibold tracking-wide"
+           style="box-shadow: 10px 10px #d6e4e5; ">Moodle</a>
+           <a href="/extension" class="green-col font-bold box-shadow m-4 px-8 mb-4 py-2 mt-8 rounded-xl text-2xl lg:w-1/4 w-2/3  font-semibold tracking-wide"
+           style="box-shadow: 10px 10px #d6e4e5; ">Extension</a>
+         
+       </div>
+    
+<center>
+    <h1 class="text-4xl mt-8 ">Moodle</h1></center>
+  <img src="{% static 'images/moodle.png' %}" alt="moodle" class="h-40">
+</center>
+<div class="flex flex-col font-sans lgreen-col">
+  <div class="container mx-auto">
+    <div class="m-auto flex flex-wrap ">
+     <center> <p class="text-gray-600 leading-relaxed mb-10 w-2/3">
+Feeling low? Or just want to relax? Well we have got your back as we equip you with sugggestions according to how you are feeling right now! So what's with the long face? Enjoy our reccomendations! 
+      </p></center>
+    </div>
+  </div>
+
+  <div class="quiz-container mx-auto " id="quiz">
+    <div class="quiz-header">
+      <h2 id="question" class="text-2xl">Question Text</h2>
+      <ul class="ques-list">
+        <li>
+          <input type="radio" name="answer" id="a" class="answer" />
+          <label for="a" id="a_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="b" class="answer" />
+          <label for="b" id="b_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="c" class="answer" />
+          <label for="c" id="c_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="d" class="answer" />
+          <label for="d" id="d_text">Answer</label>
+        </li>
+      </ul>
+    </div>
+
+    <button id="submit" class="quiz-btn">Submit</button>
+  </div>
+</section>
+
+{% endblock body %}
+{% block script %}<script src="{% static 'assets/moodle.js' %}"></script>{% endblock script %}
+

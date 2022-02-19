@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% block links %}
+{% load static %}
+<link
+  rel="shortcut icon"
+  href="{% static 'images/icon.png' %}"
+  type="image/x-icon"
+/>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="{% static 'assets/extension.css' %}">{% endblock links %}
+{% block title %}Extension{% endblock title %}
+{% block colorclass %}lgreencol{% endblock colorclass %}
+{% block body %}
+<div class="flex flex-row flex-wrap justify-center mt-20">
+    <a href="" class="green-col font-bold box-shadow px-8 m-4 mb-4 py-2 mt-8 rounded-xl text-2xl lg:w-1/4 w-2/3  font-semibold tracking-wide"
+       style="box-shadow: 10px 10px #d6e4e5; ">Bot</a>
+       <a href="" class="green-col font-bold box-shadow m-4 px-8 mb-4 py-2 mt-8 rounded-xl text-2xl lg:w-1/4 w-2/3  font-semibold tracking-wide"
+       style="box-shadow: 10px 10px #d6e4e5; ">Moodle</a>
+       <a href="/extension" class="green-col font-bold box-shadow m-4 px-8 mb-4 py-2 mt-8 rounded-xl text-2xl lg:w-1/4 w-2/3  font-semibold tracking-wide"
+       style="box-shadow: 10px 10px #d6e4e5; ">Extension</a>
+     
+   </div>
+<center><h1 class="text-3xl font-bold p-4 ">🧩Extension's Download Procedure🧩 </h1></center>
+<center><div class="underline underline-offset-2"><a href="https://drive.google.com/file/d/1uIgR1ufpbi19Co46youj95KEi7486a4a/view?usp=sharing">Download zip</a></div></center>
+    <div class="container  mx-auto w-full h-full">
+        <div class="relative wrap overflow-hidden p-10 h-full">
+          <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+          <!-- right timeline -->
+          <div class="mb-8 flex justify-between items-center w-full right-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+              <h1 class="mx-auto text-white font-semibold text-lg ">1</h1>
+            </div>
+            <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+              <h3 class="mb-3 font-bold text-gray-800 text-xl">Download the zip file </h3>
+              <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Download the zip file and extract the files.</p>
+            </div>
+          </div>
+      
+          <!-- left timeline -->
+          <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+              <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+            </div>
+            <div class="order-1 green-col rounded-lg shadow-xl w-5/12 px-6 py-4">
+              <h3 class="mb-3 font-bold  text-xl">Developer Mode</h3>
+              <p class="text-sm font-medium leading-snug tracking-wide  text-opacity-100">Ensure that the Developer mode is on.</p>
+            </div>
+          </div>
+          
+          <!-- right timeline -->
+          <div class="mb-8 flex justify-between items-center w-full right-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+              <h1 class="mx-auto text-white font-semibold text-lg ">3</h1>
+            </div>
+            <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+              <h3 class="mb-3 font-bold text-gray-800 text-xl">Unpacking the extension</h3>
+              <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Click on Load unpacked and select web-ext folder from the directory.</p>
+            </div>
+          </div>
+      
+          <!-- left timeline -->
+          <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+              <h1 class="mx-auto text-white  font-semibold text-lg">4</h1>
+            </div>
+            <div class="order-1 green-col rounded-lg shadow-xl w-5/12 px-6 py-4">
+              <h3 class="mb-3 font-bold  text-xl">Good to go!</h3>
+              <p class="text-sm font-medium leading-snug tracking-wide  text-opacity-100">Your chrome browser is equipped with our extension now!.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock body %}

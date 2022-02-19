@@ -1,0 +1,188 @@
+{% extends 'base.html' %} {% block title %}Report{% endblock title %} 
+{% block links %} {% load static %}
+<link rel="stylesheet" href="{% static 'assets/report.css' %}" />
+<link rel="stylesheet" href="{% static 'assets/style.css' %}" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link
+  rel="shortcut icon"
+  href="{% static 'images/icon.png' %}"
+  type="image/x-icon"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+{% endblock links %} {% block body %}
+<section style="background: #e3f9e8"></section>
+<section class="report-form" id="report-form">
+
+  <center>
+      <h1 class="text-3xl">REPORT THE COMPLAINT</h1>
+      <div>
+Fill in legitmate details. We will get back to you soon. If any decrepancies are found, you would be liable.
+      </div>
+    </div>
+  </center>
+  <center><img src="{% static 'images/report.png' %}" alt="" /></center>
+  <div class="report_content">
+    <div class="rect">
+      <form action="/report" method="post">
+        {% csrf_token %}
+        <div class="text" id="name-text">Name</div>
+        <div>
+          <input type="text" class="i-field"name="name" id="name"required />
+        </div>
+        <div class="text">Date of the Incident</div>
+
+        <div>
+          <input type="date" class="i-field"name="date" id="date"required />
+        </div>
+        <div class="text">Time of the Incident</div>
+        <div>
+          <input type="time" class="i-field"name="time" id="time"required />
+        </div>
+        <div class="text">About the Incident</div>
+
+        <div>
+          <input type="text" class="i-field"name="about" id="about"required />
+        </div>
+        <div class="text">Any police report filed by you?</div>
+        <div>
+          <input type="text" class="i-field"name="police_report" id="police_report" required/>
+        </div>
+        <div class="text">Any link or Evidence link</div>
+        <div>
+          <input type="text" class="i-field"name="link" id="link" required/>
+        </div>
+        <div class="text">How can we help you?</div>
+        <div>
+          <select
+            name="help"
+            class="i-field"
+            id="help"
+          >
+            <option value="Talk to your guardians or friends">Talk to your guardians or friends</option>
+            <option value="Report to the authorities">Report to the authorities</option>
+            <option value="Simple talk with the assaulter and let them know the consequences">Simple talk with the assaulter and let them know the consequences </option>
+          </select>
+        </div>
+        <center><div>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </center>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- {% comment %}
+<!-- <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1440 320"
+  style="background: #c0f7b7"
+>
+  <path
+    fill="#E3F9E8"
+    fill-opacity="1"
+    d="M0,160L80,160C160,160,320,160,480,176C640,192,800,224,960,202.7C1120,181,1280,107,1360,69.3L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+    style="user-select: auto"
+  ></path>
+</svg>
+{% endcomment %} --> 
+<!-- <img src="{% static 'images/wave1.png' %}" alt="" />
+<div>
+  <section class="text-gray-700">
+    <div class="container px-5 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
+          Frequently Asked Questions
+        </h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+          The most common questions about how our services works and what
+          can do for you.
+        </p>
+      </div>
+      <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        <div class="w-full lg:w-1/2 px-4 py-2">
+          <details class="mb-4">
+            <summary class="font-semibold  lgreen-col rounded-md py-2 px-4">
+              How Long is this site live?
+            </summary>
+
+            <span>
+              Laboris qui labore cillum culpa in sunt quis sint veniam.
+              Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+              minim velit nostrud pariatur culpa magna in aute.
+            </span>
+          </details>
+          <details class="mb-4">
+            <summary class="font-semibold lgreen-col rounded-md py-2 px-4">
+              Can I install/upload anything I want on there?
+            </summary>
+
+            <span>
+              Laboris qui labore cillum culpa in sunt quis sint veniam.
+              Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+              minim velit nostrud pariatur culpa magna in aute.
+            </span>
+          </details>
+          <details class="mb-4">
+            <summary class="font-semibold  lgreen-col rounded-md py-2 px-4">
+              How can I migrate to another site?
+            </summary>
+
+            <span>
+              Laboris qui labore cillum culpa in sunt quis sint veniam.
+              Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+              minim velit nostrud pariatur culpa magna in aute.
+            </span>
+          </details>
+        </div>
+        <div class="w-full lg:w-1/2 px-4 py-2">
+          <details class="mb-4">
+            <summary class="font-semibold  lgreen-col rounded-md py-2 px-4">
+              Can I change the domain you give me?
+            </summary>
+
+            <span class="px-4 py-2">
+              Laboris qui labore cillum culpa in sunt quis sint veniam.
+              Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+              minim velit nostrud pariatur culpa magna in aute.
+            </span>
+          </details>
+          <details class="mb-4">
+            <summary class="font-semibold  lgreen-col rounded-md py-2 px-4">
+              How many sites I can create at once?
+            </summary>
+
+            <span class="px-4 py-2">
+              Laboris qui labore cillum culpa in sunt quis sint veniam.
+              Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+              minim velit nostrud pariatur culpa magna in aute.
+            </span>
+          </details>
+          <details class="mb-4">
+            <summary class="font-semibold  lgreen-col rounded-md py-2 px-4">
+              How can I communicate with you?
+            </summary>
+
+            <span class="px-4 py-2">
+              Laboris qui labore cillum culpa in sunt quis sint veniam.
+              Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+              minim velit nostrud pariatur culpa magna in aute.
+            </span>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section> -->
+<!-- </div> -->
+<!-- {% endblock body %} {% block svg %}
+<img src="{% static 'images/wave2.png' %}"style="background: #e3f9e8"alt=""/>{% endblock svg %} {% block color_col %}lgreen-col{% endblock color_col %} 
+{% block script %}{% endblock script %} -->
