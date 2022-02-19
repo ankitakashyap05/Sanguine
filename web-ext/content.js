@@ -69,7 +69,7 @@ function removeProfanityFromNode(event) {
 function emojiReplace(strMatchingString, strFirstLetter) {
 	var starString = "";
   var index = wordList.indexOf(strMatchingString.toLowerCase());
-  starString = "***";
+  starString = emojiList[Math.floor(Math.random()*emojiList.length)];;
 
 	return starString;
 }

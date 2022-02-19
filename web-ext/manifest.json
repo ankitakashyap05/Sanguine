@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Sanguine",
 	"version": "0.0.1",
-	"description": "Protects you from abusive words on the internet",
+	"description": "Protects you from abusive words on the internet, Todo list",
 	"icons": { "16": "icon16.png" },
 	"background": {
 	"scripts": ["background.js"]

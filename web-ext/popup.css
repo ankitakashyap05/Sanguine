@@ -1,18 +1,56 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins&display=swap');
+
 *{
     background-color: #C0F7B7;
     margin:10px;
-    border-radius: 20px;
+    border-radius: 10px;
     font-family: 'Amatic SC', cursive;
 font-family: 'Poppins', sans-serif;
 }
+.amatic{
+    font-family: 'Amatic SC', cursive;
+}
+body{
+    width:350px;
+}
 .btn-style{
+
     background-color:#019a2d;
     color:white;
      margin-bottom: 5px;
      text-decoration: none;
-
+     font-size: 20px;
 }
 .sized-box{
 height:3px;
+}
+
+.todo-items, .todo-items li{
+    margin-bottom:4px;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.todo-items li{
+    margin-bottom:2px;
+    margin-top:2px;
+    padding:10px;
+    border-bottom:2px solid #ccc;
+    background-color:#f1f1f1;
+}
+span{
+    background-color:#f1f1f1;
+}
+.todo-items li:hover{
+    background-color:#e1e1e1;
+}
+.todo-items li:hover,span{
+    background-color:#e1e1e1;
+}
+.todo-items li.done span.item{
+    text-decoration:line-through;
+}
+.new-item{
+   display:none;
 }
