@@ -20,6 +20,11 @@ sometimes leads to suicides. To solve this, our <b>Team Sasa</b> has come up wit
 
 What we aim is to help the victim at every step of his/her/their journey if they are Cyberbullied.
 
+<img src="static\images\grief-stages.png" >
+
+---
+
+<img src="static\images\features.png">
 
 ---
 
