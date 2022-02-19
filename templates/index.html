@@ -1,0 +1,234 @@
+{% extends "base.html" %} {%block title%}Home{%endblock title%} {%block links%}
+{% load static %}
+<link rel="stylesheet" href="{% static 'assets/style.css' %}" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link
+  rel="shortcut icon"
+  href="{% static 'images/icon.png' %}"
+  type="image/x-icon"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+{% endblock links %} {% block body %}
+<!-- HERO SECTION -->
+
+<div class="flex flex-col font-sans lgreen-col">
+  <div class="container mx-auto">
+    <main
+      class="flex flex-col-reverse sm:flex-row jusitfy-between items-center"
+    >
+      <div
+        class="sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left"
+      >
+        <h1
+          class="uppercase text-6xl font-bold leading-none tracking-wide mb-2 xl:ml-6"
+        >
+          WHO
+        </h1>
+        <h2
+          class="uppercase text-4xl text-secondary tracking-widest mb-6 xl:ml-6"
+        >
+          WE ARE?
+        </h2>
+        <p class="text-gray-600 leading-relaxed xl:ml-6 mb-4">
+          In India cyberbullying status is not very good. Mostly 75 % of the cases were reported in last two years against cyberbullying. Some of the cases are unsolved and mostly cases were not reported. The person who is bullied sometimes undergoing depression, trauma and were sometimes leads to suicides. To solve this, our Team Sasa has come up with a integrated solution to solve this problem at every step.
+        </p>
+        <a
+          href="#survey"
+          class="green-col hover:bg-opacity-70 py-3 px-6 text-lg font-medium text-white rounded-xl invisible xl:visible ml-6" style="box-shadow: 10px 10px #d6e4e5;">
+          Learn more</a
+        >
+      </div>
+      <div class="mt-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:pl-12">
+        <img src="{% static 'images/hero.png' %}" alt="hero-illustartion" />
+      </div>
+    </main>
+  </div>
+  <svg
+    id="wave"
+    style="transform: rotate(0deg); transition: 0.3s"
+    viewBox="0 0 1440 130"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+        <stop stop-color="rgba(192, 247, 183, 1)" offset="0%"></stop>
+        <stop stop-color="rgba(192, 247, 183, 1)" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+    <path
+      style="transform: translate(0, 0px); opacity: 1"
+      fill="url(#sw-gradient-0)"
+      d="M0,52L60,45.5C120,39,240,26,360,23.8C480,22,600,30,720,41.2C840,52,960,65,1080,65C1200,65,1320,52,1440,43.3C1560,35,1680,30,1800,23.8C1920,17,2040,9,2160,13C2280,17,2400,35,2520,34.7C2640,35,2760,17,2880,21.7C3000,26,3120,52,3240,60.7C3360,69,3480,61,3600,47.7C3720,35,3840,17,3960,23.8C4080,30,4200,61,4320,67.2C4440,74,4560,56,4680,41.2C4800,26,4920,13,5040,6.5C5160,0,5280,0,5400,15.2C5520,30,5640,61,5760,67.2C5880,74,6000,56,6120,45.5C6240,35,6360,30,6480,32.5C6600,35,6720,43,6840,58.5C6960,74,7080,95,7200,86.7C7320,78,7440,39,7560,26C7680,13,7800,26,7920,34.7C8040,43,8160,48,8280,58.5C8400,69,8520,87,8580,95.3L8640,104L8640,130L8580,130C8520,130,8400,130,8280,130C8160,130,8040,130,7920,130C7800,130,7680,130,7560,130C7440,130,7320,130,7200,130C7080,130,6960,130,6840,130C6720,130,6600,130,6480,130C6360,130,6240,130,6120,130C6000,130,5880,130,5760,130C5640,130,5520,130,5400,130C5280,130,5160,130,5040,130C4920,130,4800,130,4680,130C4560,130,4440,130,4320,130C4200,130,4080,130,3960,130C3840,130,3720,130,3600,130C3480,130,3360,130,3240,130C3120,130,3000,130,2880,130C2760,130,2640,130,2520,130C2400,130,2280,130,2160,130C2040,130,1920,130,1800,130C1680,130,1560,130,1440,130C1320,130,1200,130,1080,130C960,130,840,130,720,130C600,130,480,130,360,130C240,130,120,130,60,130L0,130Z"
+    ></path>
+  </svg>
+  <!-- OUR SERVICES SECTION -->
+
+  <section class="green-col">
+    <center>
+      <h1 class="uppercase text-4xl  rounded-xl font-medium tracking-wide mb-6  lgreen-col px-4 py-2 w-min"  style="box-shadow: 10px 10px #d6e4e5;">
+      Services
+      </h1>
+    </center>
+
+    <div class="flex items-center flex-row flex-wrap justify-center">
+      <div
+        class="mb-2 lgreen-col font-semibold text-center rounded-2xl border shadow-lg p-10 max-w-xs m-auto"
+      >
+        <img
+          class="mb-3 w-32 h-32 text-center mx-auto"
+          src="{% static 'images/extension-service.png' %}"
+          alt="extension-service.png"
+        />
+        <h1 class="text-lg text-gray-700">Extension</h1>
+        <h3 class="text-sm text-gray-400 pb-10">
+          An extension to aid the user with a toxic free internet enviorment
+        </h3>
+
+        <a href="/extension"
+          class="green-col px-8 py-2 mt-8 rounded-xl text-white font-semibold tracking-wide"  style="box-shadow: 10px 10px #d6e4e5;"
+        >
+          Know More
+        </a>
+      </div>
+
+      <div
+        class="mb-2 lgreen-col font-semibold text-center rounded-xl border shadow-lg p-10 max-w-xs m-auto"
+      >
+        <img
+          class="mb-3 w-32 h-32 mx-auto text-center"
+          src="{% static 'images/explore-service.png' %}"
+          alt="explore-service.pngr"
+        />
+        <h1 class="text-lg text-gray-700">Explore</h1>
+        <h3 class="text-sm text-gray-400 pb-10">
+          Recovering from a bullying incident can be tough, but not with us.
+        </h3>
+
+        <a
+          class="green-col px-8 py-2 mt-8 rounded-xl text-white font-semibold tracking-wide"  href="/explore" style="box-shadow: 10px 10px #d6e4e5;"
+        >
+          Know More
+        </a>
+      </div>
+
+      <div
+        class="mb-2 lgreen-col font-semibold text-center rounded-xl border shadow-lg p-10 max-w-xs m-auto"
+      >
+        <img
+          class="mb-3 w-32 h-32 mx-auto text-center"
+          src="{% static 'images/report-service.png' %}"
+          alt="report-service.png"
+        />
+        <h1 class="text-lg text-gray-700">Report</h1>
+        <h3 class="text-sm text-gray-400 pb-10">
+          File in complaints to institutions to help making internet safe.
+        </h3>
+
+        <a
+       href="/report"
+          class="green-col box-shadow px-8 py-2 mt-8 rounded-xl text-white font-semibold tracking-wide"
+          style="box-shadow: 10px 10px #d6e4e5;">
+        
+          Know More
+        </a>
+      </div>
+    </div>
+  </section>
+  <svg
+    id="wave"
+    style="transform: rotate(180deg); transition: 0.3s"
+    viewBox="0 0 1440 130"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+        <stop stop-color="rgba(192, 247, 183, 1)" offset="0%"></stop>
+        <stop stop-color="rgba(192, 247, 183, 1)" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+    <path
+      style="transform: translate(0, 0px); opacity: 1"
+      fill="url(#sw-gradient-0)"
+      d="M0,52L60,45.5C120,39,240,26,360,23.8C480,22,600,30,720,41.2C840,52,960,65,1080,65C1200,65,1320,52,1440,43.3C1560,35,1680,30,1800,23.8C1920,17,2040,9,2160,13C2280,17,2400,35,2520,34.7C2640,35,2760,17,2880,21.7C3000,26,3120,52,3240,60.7C3360,69,3480,61,3600,47.7C3720,35,3840,17,3960,23.8C4080,30,4200,61,4320,67.2C4440,74,4560,56,4680,41.2C4800,26,4920,13,5040,6.5C5160,0,5280,0,5400,15.2C5520,30,5640,61,5760,67.2C5880,74,6000,56,6120,45.5C6240,35,6360,30,6480,32.5C6600,35,6720,43,6840,58.5C6960,74,7080,95,7200,86.7C7320,78,7440,39,7560,26C7680,13,7800,26,7920,34.7C8040,43,8160,48,8280,58.5C8400,69,8520,87,8580,95.3L8640,104L8640,130L8580,130C8520,130,8400,130,8280,130C8160,130,8040,130,7920,130C7800,130,7680,130,7560,130C7440,130,7320,130,7200,130C7080,130,6960,130,6840,130C6720,130,6600,130,6480,130C6360,130,6240,130,6120,130C6000,130,5880,130,5760,130C5640,130,5520,130,5400,130C5280,130,5160,130,5040,130C4920,130,4800,130,4680,130C4560,130,4440,130,4320,130C4200,130,4080,130,3960,130C3840,130,3720,130,3600,130C3480,130,3360,130,3240,130C3120,130,3000,130,2880,130C2760,130,2640,130,2520,130C2400,130,2280,130,2160,130C2040,130,1920,130,1800,130C1680,130,1560,130,1440,130C1320,130,1200,130,1080,130C960,130,840,130,720,130C600,130,480,130,360,130C240,130,120,130,60,130L0,130Z"
+    ></path>
+  </svg>
+  <!-- QUIZ SECTION -->
+  <section class="mb-10">
+  <center>
+    <h1 id="survey"class="uppercase  w-min py-2 px-6 green-col rounded-xl text-4xl font-medium mt-4 tracking-wide mb-4" style="box-shadow: 10px 10px #d6e4e5;">
+      SURVEY
+    </h1>
+  </center>
+  <div class="flex flex-col font-sans lgreen-col">
+    <div class="container mx-auto">
+      <div class="m-auto flex flex-wrap w-4/5">
+       <center> <p class="text-gray-600 leading-relaxed mb-10">
+To know how much you have the correct persppective about Cyberbullying, take the following survey.If you score high, you have the correct notion about cyberbullying. If not, learn from various articles on the internet.
+        </p></center>
+      </div>
+    </div>
+
+    <div class="quiz-container mx-auto" id="quiz">
+      <div class="quiz-header">
+        <h2 id="question" class="text-2xl">Question Text</h2>
+        <ul class="ques-list">
+          <li>
+            <input type="radio" name="answer" id="a" class="answer" />
+            <label for="a" id="a_text">Answer</label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="b" class="answer" />
+            <label for="b" id="b_text">Answer</label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="c" class="answer" />
+            <label for="c" id="c_text">Answer</label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="d" class="answer" />
+            <label for="d" id="d_text">Answer</label>
+          </li>
+        </ul>
+      </div>
+
+      <button id="submit" class="quiz-btn">Submit</button>
+    </div>
+  </section>
+
+    {% endblock body %} {% block svg %}
+    <svg
+      id="wave"
+      style="transform: rotate(0deg); transition: 0.3s"
+      viewBox="0 0 1440 130"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="rgba(192, 247, 183, 1)" offset="0%"></stop>
+          <stop stop-color="rgba(192, 247, 183, 1)" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        style="transform: translate(0, 0px); opacity: 1"
+        fill="url(#sw-gradient-0)"
+        d="M0,52L60,45.5C120,39,240,26,360,23.8C480,22,600,30,720,41.2C840,52,960,65,1080,65C1200,65,1320,52,1440,43.3C1560,35,1680,30,1800,23.8C1920,17,2040,9,2160,13C2280,17,2400,35,2520,34.7C2640,35,2760,17,2880,21.7C3000,26,3120,52,3240,60.7C3360,69,3480,61,3600,47.7C3720,35,3840,17,3960,23.8C4080,30,4200,61,4320,67.2C4440,74,4560,56,4680,41.2C4800,26,4920,13,5040,6.5C5160,0,5280,0,5400,15.2C5520,30,5640,61,5760,67.2C5880,74,6000,56,6120,45.5C6240,35,6360,30,6480,32.5C6600,35,6720,43,6840,58.5C6960,74,7080,95,7200,86.7C7320,78,7440,39,7560,26C7680,13,7800,26,7920,34.7C8040,43,8160,48,8280,58.5C8400,69,8520,87,8580,95.3L8640,104L8640,130L8580,130C8520,130,8400,130,8280,130C8160,130,8040,130,7920,130C7800,130,7680,130,7560,130C7440,130,7320,130,7200,130C7080,130,6960,130,6840,130C6720,130,6600,130,6480,130C6360,130,6240,130,6120,130C6000,130,5880,130,5760,130C5640,130,5520,130,5400,130C5280,130,5160,130,5040,130C4920,130,4800,130,4680,130C4560,130,4440,130,4320,130C4200,130,4080,130,3960,130C3840,130,3720,130,3600,130C3480,130,3360,130,3240,130C3120,130,3000,130,2880,130C2760,130,2640,130,2520,130C2400,130,2280,130,2160,130C2040,130,1920,130,1800,130C1680,130,1560,130,1440,130C1320,130,1200,130,1080,130C960,130,840,130,720,130C600,130,480,130,360,130C240,130,120,130,60,130L0,130Z"
+      ></path>
+    </svg>
+    {% endblock svg %} {% block color_col %}green-col{% endblock color_col %} 
+    {% block script %}
+    <script src="{% static 'assets/quiz.js' %}"></script>
+    {% endblock script %}
+  </div>
+</div>
