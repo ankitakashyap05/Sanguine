@@ -1,4 +1,4 @@
-<h1 align="center"> SANGUINE</h1>
+<h1 id="top" align="center"> SANGUINE</h1>
 <p align="center"><img align="center" alt="logo" src="https://raw.githubusercontent.com/ankitakashyap05/musical-octo-spork/main/static/images/hero.png?token=GHSAT0AAAAAABQZNMRQDOHCV7RIJ6LOLJMIYQR7YTA" height="200px"></p>
 
 > "Post, Don't Roast"
@@ -75,3 +75,4 @@ Follow these steps to unpack the extension in your chrome browser :
 <a href="https://www.figma.com/file/7rRIvKOpNyAF5jYTpEU6WK/Electrothon-4.0?node-id=82%3A50" target="_blank">Link</a>
 
 ---
+<p align="right">(<a href="#top">back to top</a>)</p>
