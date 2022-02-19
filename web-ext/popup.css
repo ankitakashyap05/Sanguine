@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins&display=swap');
+*{
+    background-color: #C0F7B7;
+    margin:10px;
+    border-radius: 20px;
+    font-family: 'Amatic SC', cursive;
+font-family: 'Poppins', sans-serif;
+}
+.btn-style{
+    background-color:#019a2d;
+    color:white;
+     margin-bottom: 5px;
+     text-decoration: none;
+
+}
+.sized-box{
+height:3px;
+}
