@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="{% static 'images/icon.png' %}"type="image/x-icon"/>
+    <link rel="stylesheet" href="{% static 'assets/report.css' %}" />
+    <title>Sanguine | Login</title>
+  </head>
+  <body>
+    <section class="info" id="info">
+      <div class="left column">
+        <div class="cont">
+          <div class="title">Sanguine</div>
+        <div class="text">
+          If you are new here then what are you waiting for? Sign up now!     <a href="/signup" style="color:black; background-color:white; border-radius: 10px;font-weight:500">Signup</a>
+        </div>
+        </div>
+      </div>
+      <div class="right column">
+        <img src="{% static 'images/login.png' %}" alt="" />
+      </div>
+    </section>
+    <section class="signup-form" id="signup-form">
+      <div class="signup-content">
+        <div class="rect">
+         <div class="form-signup">
+           <div class="title">
+             Log In
+           </div>
+          <form action="/login" method="post">
+            {% csrf_token %}
+            <div class="fields">
+              
+              {% comment %} <div class="text">Email</div>
+              <div>
+                <input type="email" class="i-field" id="email" />
+              </div> {% endcomment %}
+              <div class="text" id="name" >Username</div>
+              <div>
+                <input type="text" class="i-field" id="name" name="name" required/>
+              </div>
+                 <div class="text">Password</div>
+              <div>
+                <input type="password" id="password" class="i-field"name="password1" />
+              </div>
+              <div class="button">
+                <input type="submit" value="Login" class="btn" />
+              </div>
+            </div>
+          </form>
+         </div>
+          
+        </div>
+      </div>
+    </section>
+  
+  </body>
+</html>

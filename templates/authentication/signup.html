@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'images/icon.png' %}"type="image/x-icon"/>
+    <link rel="stylesheet" href="{% static 'assets/report.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/style.css' %}">
+    <title>Sanguine | Signup</title>
+  </head>
+  <body>
+    <section class="info" id="info">
+      <div class="left column">
+        <div class="cont">
+          <div class="title">Sanguine</div>
+        <div class="text">
+         Sign up now! And we promise to be your sidekick for all your queries.
+        </div>
+        </div>
+      </div>
+      <div class="right column">
+        <img src="{% static 'images/login.png' %}" alt="" />
+      </div>
+    </section>
+    <section class="signup-form" id="signup-form">
+      <div class="signup-content">
+        <div class="rect">
+         <div class="form-signup">
+           <div class="title">
+             Sign Up
+           </div>
+          <form action="/signup" name="userform" onsubmit="return VALIDATORS1()" method="post" >
+            {% csrf_token %}
+            <div class="fields">
+              <div class="text" id="name" >Username</div>
+              <div>
+                <input type="text" class="i-field" id="name" name="name" required/>
+              </div>
+              <div class="text">Email</div>
+              <div>
+                <input type="email" class="i-field" id="email"name="email"required />
+              </div>
+              <div class="side-col">
+                <div class="left">
+                  <div class="text">Age</div>
+                  <div>
+                    <input type="number" class="i-field" id="age" name="age" min="0" max="120"required />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="occu">
+                    <div class="text" id="occ">Occupation</div>
+                  <div>
+                    <select name="occupation" id="occupation" class="i-field" style="margin-bottom:8px" placeholder="Select Any One">
+                      <option value="College Student">College Student</option>
+                      <option value="School Student">School Student</option>
+                      <option value="Employee">Employee</option>
+                      <option value="Self Employed">Self Employed</option>
+                    </select>
+                  </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="text">Mobile</div>
+              <div>
+                <input type="text" id="mobile" class="i-field" name="mobile"required/>
+              </div>
+              <div class="text">Gender</div>
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="Female"
+                  id="genderf"
+                />
+                <span class="gen">Female</span class="gen">
+                <input
+                  type="radio"
+                  name="gender"
+                  value="Male"
+                  id="genderm"
+                />
+                <span class="gen">Male</span class="gen">
+                <input
+                  type="radio"
+                  name="gender"
+                  value="Prefer Not to Say"
+                  id="genderp"
+                />
+                <span class="gen">Prefer Not to Say</span class="gen">
+              </div>
+              <div class="text">Password</div>
+              <div>
+                <input type="password" id="password" class="i-field"name="password1"required />
+              </div>
+              <div class="text">Confirm Password</div>
+              <div>
+                <input type="password" id="cpassword" class="i-field"name="password2" required/>
+              </div>
+              <div class="button">
+                <input type="submit" value="Signup" class="btn" />
+              </div>
+            </div>
+          </form>
+         </div>
+          
+          
+        </div>
+      </div>
+    </section>
+    
+  
+  </body>
+  <script src="{% static 'assets/validator.js' %}"></script>
+</html>
