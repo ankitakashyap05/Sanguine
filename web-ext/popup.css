@@ -45,12 +45,19 @@ span{
 .todo-items li:hover{
     background-color:#e1e1e1;
 }
-.todo-items li:hover,span{
+.todo-items li:hover span{
     background-color:#e1e1e1;
 }
 .todo-items li.done span.item{
     text-decoration:line-through;
 }
+.todo-items li:hover .icon{
+    background-color:#e1e1e1;
+}
 .new-item{
    display:none;
+}
+.icon{
+    background-color:#f1f1f1;
+    cursor: pointer;
 }
