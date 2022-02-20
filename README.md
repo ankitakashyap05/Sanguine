@@ -119,6 +119,10 @@ Follow these steps to unpack the extension in your chrome browser :
 		<td>
 			<img width="306" alt="code-two" src="static\images\screenshot-www.google.com-2022.02.20-15_53_25.png">
 		</td>
+        	<td>
+			<img width="306" alt="code-two" src="static\images\Screenshot 2022-02-20 155040.png">
+		</td>
+
 
 </tr>
 
