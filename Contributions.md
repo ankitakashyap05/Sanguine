@@ -5,7 +5,7 @@ Go ahead and follow these steps to contribute to the community.
 
 - Clone your Fork to your local machine
   ```
-  git clone [https://github.com/ankitakashyap05/musical-octo-spork.git]
+  git clone [https://github.com/ankitakashyap05/Sanguine.git]
   ```
          
 - Create your Feature Branch
