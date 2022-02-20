@@ -75,4 +75,17 @@ Follow these steps to unpack the extension in your chrome browser :
 <a href="https://www.figma.com/file/7rRIvKOpNyAF5jYTpEU6WK/Electrothon-4.0?node-id=82%3A50" target="_blank">Link</a>
 
 ---
+
+## 🛠 &nbsp;Tech Stack
+<!-- ![Tensorflow](https://img.shields.io/badge/TensorFlow%20-%23FF6F00.svg?&style=for-the-badge&logo=TensorFlow&logoColor=white)&nbsp;
+![Keras](https://img.shields.io/badge/Keras%20-%23D00000.svg?&style=for-the-badge&logo=Keras&logoColor=white)&nbsp; -->
+![Django](https://img.shields.io/badge/django%20-%23092E20.svg?&style=for-the-badge&logo=django&logoColor=white)&nbsp;
+![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)&nbsp;
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)&nbsp;
+![Javascipt](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![JSON](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)
+
+<br>
+
+---
 <p align="right">(<a href="#top">back to top</a>)</p>
