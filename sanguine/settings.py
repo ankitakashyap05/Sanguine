@@ -27,6 +27,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.1.1', 'localhost', 'sanguinesasa.herokuapp.com']
 
+CSRF_COOKIE_DOMAIN = 'sanguinesasa.herokuapp.com'
 
 # Application definition
 
