@@ -33,7 +33,6 @@ CSRF_COOKIE_DOMAIN = 'sanguinesasa.herokuapp.com'
 
 INSTALLED_APPS = [
     'sasa.apps.SasaConfig',
-    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -1,9 +1,7 @@
-from django.contrib import admin
 from django.urls import path
 from sasa import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path("",views.defaultpage,name="login"),
     path("report",views.reportpage,name="report"),
     path("login",views.loginpage,name='login'),
