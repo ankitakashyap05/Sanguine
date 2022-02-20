@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="{% static 'images/icon.png' %}"type="image/x-icon"/>
     <link rel="stylesheet" href="{% static 'assets/report.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/style.css' %}" />
     <title>Sanguine | Login</title>
   </head>
   <body>
@@ -16,7 +17,7 @@
         <div class="cont">
           <div class="title">Sanguine</div>
         <div class="text">
-          If you are new here then what are you waiting for? Sign up now!     <a href="/signup" style="color:black; background-color:white; border-radius: 10px;font-weight:500">Signup</a>
+          If you are new here then what are you waiting for? Sign up now!     <a href="/signup" style="color:black; background-color:white; border-radius: 7px;">Signup</a>
         </div>
         </div>
       </div>
@@ -34,11 +35,6 @@
           <form action="/login" method="post">
             {% csrf_token %}
             <div class="fields">
-              
-              {% comment %} <div class="text">Email</div>
-              <div>
-                <input type="email" class="i-field" id="email" />
-              </div> {% endcomment %}
               <div class="text" id="name" >Username</div>
               <div>
                 <input type="text" class="i-field" id="name" name="name" required/>
@@ -59,4 +55,15 @@
     </section>
   
   </body>
+  <footer>
+    
+      <div class="messagebox" >
+        {% if messages %}{% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0 extra" role="alert">
+       {{ message }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>{% endfor %}{% endif %}
+      </div>
+    </center>
+  </footer>
 </html>

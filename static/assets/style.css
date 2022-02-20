@@ -75,3 +75,22 @@ body::-webkit-scrollbar-thumb
     outline: none;
     background-color: white;
   }
+
+.messagebox{
+  background:#E3F9E8;
+  border:2px solid #CFE3DC;
+  border-radius: 4px;
+  position:absolute;
+  bottom:2%;
+  height:35px;
+  width:80vw;
+
+}
+
+.extra{
+  color:#019a2d;
+  font-weight:450;
+  font-size: 17px;
+  margin-left: 10px;
+
+}
