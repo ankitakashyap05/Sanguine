@@ -88,4 +88,41 @@ Follow these steps to unpack the extension in your chrome browser :
 <br>
 
 ---
+## 📷 Preview Screenshots
+
+<table>
+	<thead>
+		<td>
+			<b></b>
+		</td>
+		<td>
+			<b></b>
+		</td>
+	</thead>
+	<tr>
+		<td>
+			<img width="306" alt="code-one" src="static\images\screenshot-127.0.0.1_8000-2022.02.20-15_47_20.png">
+		</td>
+		<td>
+			<img width="306" alt="render-one" src="static\images\screenshot-127.0.0.1_8000-2022.02.20-15_47_45.png">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img width="306" alt="code-two" src="static\images\screenshot-127.0.0.1_8000-2022.02.20-15_48_11.png">
+		</td>
+		<td>
+			<img width="306" alt="render-two" src="static\images\screenshot-127.0.0.1_8000-2022.02.20-15_48_30.png">
+		</td>
+	</tr>
+<tr>
+		<td>
+			<img width="306" alt="code-two" src="static\images\screenshot-www.google.com-2022.02.20-15_53_25.png">
+		</td>
+
+</tr>
+
+</table>
+
+---
 <p align="right">(<a href="#top">back to top</a>)</p>
