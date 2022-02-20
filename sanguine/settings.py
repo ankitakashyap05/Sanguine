@@ -25,9 +25,9 @@ SECRET_KEY = 'django-insecure-fbk#@dj=fwim8)v&_f^esa*+8b%#p5b90h-h56_rf3xjs_q+db
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.1.1', 'localhost', 'sanguinesasa.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'sanguinesasa.herokuapp.com']
 
-CSRF_COOKIE_DOMAIN = 'sanguinesasa.herokuapp.com'
+#CSRF_COOKIE_DOMAIN = 'sanguinesasa.herokuapp.com'
 
 # Application definition
 
