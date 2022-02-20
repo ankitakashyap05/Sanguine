@@ -9,7 +9,7 @@ function VALIDATORS1(){
     var valpass1=password.value;
     var valpass2=cpassword.value;
     if(!(username.value.match(usernameregex))){
-        window.alert("Username not allowed.");
+        window.alert("Username should be alpha-numeric.");
         username.focus();
         return false;
     }

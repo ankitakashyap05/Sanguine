@@ -41,7 +41,6 @@ def signuppage(request):
 
 
         newuser=User.objects.create_user(username,email,password)
-        newuser.is_active=False
         newuser.save()
         userinfo=UserCompleteInfo(username=newuser.username,email=newuser.email,password=newuser.password,age=age,occupation=occupation,mobile=mobile,gender=gender)
         userinfo.save()
@@ -58,10 +57,10 @@ def loginpage(request):
         password1=request.POST.get("password1")
         user=authenticate(username=username,password=password1)
         if user is not None:
-            login(request,user)
+            login(request, user)
             return render(request,"index.html")
         else:
-            messages.error(request,"Entered login credentials are not correct.")
+            messages.error(request,"Entered login credentials are incorrect.")
 
     
         
