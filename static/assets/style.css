@@ -80,7 +80,7 @@ body::-webkit-scrollbar-thumb
   background:#E3F9E8;
   border:2px solid #CFE3DC;
   border-radius: 4px;
-  position:absolute;
+  margin-bottom:10px;
   bottom:2%;
   height:35px;
   width:80vw;
